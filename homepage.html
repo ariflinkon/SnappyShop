@@ -1,100 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SwiftShopper</title>
-    <!-- Bootstrap CSS Link -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Optional Bootstrap Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SwiftShopper</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
-    <!-- Content goes here -->
-     <!-- Navigation Menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">SwiftShopper</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
+  <!-- Navigation Menu -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">SwiftShopper</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cart" id="view-cart">Cart <i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="jumbotron text-center bg-primary text-white">
+    <div class="container">
+      <h1 class="display-4">Welcome to SwiftShopper</h1>
+      <p class="lead">Your one-stop shop for everything you need!</p>
+      <a href="#shop" class="btn btn-light btn-lg">Start Shopping</a>
+    </div>
+  </header>
+
+  <!-- Product Section -->
+  <section id="shop" class="container my-5">
+    <h2 class="text-center mb-4">Our Products</h2>
+    <div class="row">
+      <!-- Product Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="ratio ratio-1x1">
+            <img src="images/image3.jpg" class="card-img-top img-fluid p-2" alt="Product Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Amazon Basics 27 inch Monitor</h5>
+            <p class="card-text">IMPORTANT: Remove protective film (with date code) from panel surface before use. This film protects against shipping scratches.</p>
+            <a href="#" class="btn btn-primary buy-now">Buy Now</a>
+            <button class="btn btn-success add-to-cart mt-2">Add to Cart</button>
+          </div>
         </div>
-    </nav>
-
-    <!-- Main Content Section -->
-    <header class="jumbotron text-center bg-primary text-white">
-        <div class="container">
-            <h1 class="display-4">Welcome to SwiftShopper</h1>
-            <p class="lead">Your one-stop shop for everything you need!</p>
-            <a href="#shop" class="btn btn-light btn-lg">Start Shopping</a>
+      </div>
+      <!-- Product Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="ratio ratio-1x1">
+            <img src="images/image1.jpg" class="card-img-top img-fluid p-2" alt="Product Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">OBSBOT Meet 2-4K Webcam</h5>
+            <p class="card-text">Mini in Size, Mighty in Sight. Combines AI features with a sleek compact design.</p>
+            <a href="#" class="btn btn-primary buy-now">Buy Now</a>
+            <button class="btn btn-success add-to-cart mt-2">Add to Cart</button>
+          </div>
         </div>
-    </header>
-
-    <!-- Product Section -->
-    <section id="shop" class="container my-5">
-        <h2 class="text-center mb-4">Our Products</h2>
-        <div class="row">
-            <!-- Product Card 1 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 1</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Product Card 2 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 2</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Product Card 3 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 3</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <!-- Product Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="ratio ratio-1x1">
+            <img src="images/image2.jpg" class="card-img-top img-fluid p-2" alt="Product Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">VICRAZY Christmas Socks</h5>
+            <p class="card-text">Funny gaming socks featuring “DON’T DISTURB, I'M GAMING”. Perfect for gamers!</p>
+            <a href="#" class="btn btn-primary buy-now">Buy Now</a>
+            <button class="btn btn-success add-to-cart mt-2">Add to Cart</button>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Cart Page Section -->
+  <section id="cart" class="container my-5 d-none">
+    <h2 class="text-center mb-4">Your Cart</h2>
+    <ul id="cart-items" class="list-group mb-3"></ul>
+    <div class="text-center">
+      <button class="btn btn-danger" id="clear-cart">Clear Cart</button>
+    </div>
+  </section>
 
-     <!-- Footer -->
-     <footer class="bg-dark text-white text-center py-4">
-        <p>&copy; 2025 SwiftShopper. All rights reserved.</p>
-        <p><a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms & Conditions</a></p>
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2025 SwiftShopper. All rights reserved.</p>
+    <p><a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms & Conditions</a></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="homepage.js"></script>
 </body>
 </html>
